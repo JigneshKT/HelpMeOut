@@ -1,0 +1,41 @@
+
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <FirebaseAuth/FirebaseAuth.h>
+#import <FirebaseDatabase/FirebaseDatabase.h>
+
+#import "AFNetworking.h"
+
+#import "AppConst.h"
+#import "MBProgressHUD.h"
+
+#import "HomeVcPatient.h"
+#import "HomeVcCareGiver.h"
+
+#import "Global.h"
+#import "userModel.h"
+#import "HomeCell.h"
+#import "CareHomeCell.h"
+#import "LoginVCCareGiver.h"
+#import "LoginVCPatient.h"
+#import "AddCell.h"
+#import "addpersonVc.h"
+#import "mainLandingVc.h"
+#import "ActivityHistoryVc.h"
+#import "ActivityCell.h"
+
+
+@import FirebaseAuth;
+@import FirebaseDatabase;
+@import FirebaseMessaging;
+@import FirebaseInstanceID;
+
+#endif /* PrefixHeader_pch */
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>536339351894-c3ujlhug7iq46v8m90uncq59hc93dhvf.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.536339351894-c3ujlhug7iq46v8m90uncq59hc93dhvf</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCjq4N-F7sbn7OURY4yg-IiCfJVHby0-FI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>536339351894</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.app.helpmeout</string>
+	<key>PROJECT_ID</key>
+	<string>helpmeout-251d9</string>
+	<key>STORAGE_BUCKET</key>
+	<string>helpmeout-251d9.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:536339351894:ios:656d63363e9f6802</string>
+	<key>DATABASE_URL</key>
+	<string>https://helpmeout-251d9.firebaseio.com</string>
+</dict>
+</plist>

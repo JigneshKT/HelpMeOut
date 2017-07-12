@@ -1,0 +1,963 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C007C821F0FB58E007DA70A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C007C811F0FB58E007DA70A /* main.m */; };
+		1C007C851F0FB58E007DA70A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C007C841F0FB58E007DA70A /* AppDelegate.m */; };
+		1C007C8B1F0FB58E007DA70A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C007C891F0FB58E007DA70A /* Main.storyboard */; };
+		1C007C8D1F0FB58E007DA70A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C007C8C1F0FB58E007DA70A /* Assets.xcassets */; };
+		1C007C901F0FB58E007DA70A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C007C8E1F0FB58E007DA70A /* LaunchScreen.storyboard */; };
+		1C007C9B1F0FB58E007DA70A /* Help_Me_Out___PatientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C007C9A1F0FB58E007DA70A /* Help_Me_Out___PatientTests.m */; };
+		1C007CA61F0FB58E007DA70A /* Help_Me_Out___PatientUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C007CA51F0FB58E007DA70A /* Help_Me_Out___PatientUITests.m */; };
+		1C007CB61F0FB890007DA70A /* homePatient.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C007CB51F0FB890007DA70A /* homePatient.storyboard */; };
+		1C007CB91F0FBD4D007DA70A /* Global.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C007CB81F0FBD4D007DA70A /* Global.m */; };
+		1C36FFBC1F15FB8E00B7D0C8 /* ActivityHistoryVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C36FFBB1F15FB8E00B7D0C8 /* ActivityHistoryVc.m */; };
+		1C36FFC21F16103600B7D0C8 /* ActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C36FFC01F16103600B7D0C8 /* ActivityCell.m */; };
+		1C36FFC31F16103600B7D0C8 /* ActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C36FFC11F16103600B7D0C8 /* ActivityCell.xib */; };
+		1CF5FEFA1F14BD69002BBDB5 /* homeCareGiver.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1CF5FEF91F14BD69002BBDB5 /* homeCareGiver.storyboard */; };
+		1CF5FF011F14BE4F002BBDB5 /* userModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5FF001F14BE4F002BBDB5 /* userModel.m */; };
+		1CF5FF0D1F14CA2B002BBDB5 /* mainLandingVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5FF0C1F14CA2B002BBDB5 /* mainLandingVc.m */; };
+		1CF5FF191F14CA3B002BBDB5 /* CareHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5FF121F14CA3B002BBDB5 /* CareHomeCell.m */; };
+		1CF5FF1A1F14CA3B002BBDB5 /* CareHomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF5FF131F14CA3B002BBDB5 /* CareHomeCell.xib */; };
+		1CF5FF1B1F14CA3B002BBDB5 /* HomeVcCareGiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5FF151F14CA3B002BBDB5 /* HomeVcCareGiver.m */; };
+		1CF5FF1C1F14CA3B002BBDB5 /* LoginVCCareGiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5FF181F14CA3B002BBDB5 /* LoginVCCareGiver.m */; };
+		1CF5FF2F1F14CA47002BBDB5 /* AddCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5FF201F14CA47002BBDB5 /* AddCell.m */; };
+		1CF5FF301F14CA47002BBDB5 /* AddCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF5FF211F14CA47002BBDB5 /* AddCell.xib */; };
+		1CF5FF311F14CA47002BBDB5 /* addpersonVc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5FF241F14CA47002BBDB5 /* addpersonVc.m */; };
+		1CF5FF321F14CA47002BBDB5 /* LoginVCPatient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5FF271F14CA47002BBDB5 /* LoginVCPatient.m */; };
+		1CF5FF331F14CA47002BBDB5 /* HomeVcPatient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5FF2A1F14CA47002BBDB5 /* HomeVcPatient.m */; };
+		1CF5FF341F14CA47002BBDB5 /* HomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CF5FF2D1F14CA47002BBDB5 /* HomeCell.m */; };
+		1CF5FF351F14CA47002BBDB5 /* HomeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CF5FF2E1F14CA47002BBDB5 /* HomeCell.xib */; };
+		223B02871A6B3F81F3664310 /* libPods-Help Me Out - PatientUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B630D7FF6F90F0722D45914 /* libPods-Help Me Out - PatientUITests.a */; };
+		2EA015B080C7625E3CDF65FB /* libPods-Help Me Out - PatientTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 73BB0565D24D5BE9AF1F633D /* libPods-Help Me Out - PatientTests.a */; };
+		AE18BCF08F26DB60B5545659 /* libPods-Help Me Out - Patient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E53B87C375B170B1B0FEBFD0 /* libPods-Help Me Out - Patient.a */; };
+		D2A247831F162C04007EF2F2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2A247821F162C04007EF2F2 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1C007C971F0FB58E007DA70A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C007C751F0FB58E007DA70A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C007C7C1F0FB58E007DA70A;
+			remoteInfo = "Help Me Out - Patient";
+		};
+		1C007CA21F0FB58E007DA70A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1C007C751F0FB58E007DA70A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1C007C7C1F0FB58E007DA70A;
+			remoteInfo = "Help Me Out - Patient";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0B1753882E8038E18F479277 /* Pods-Help Me Out - PatientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Help Me Out - PatientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Help Me Out - PatientTests/Pods-Help Me Out - PatientTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1C007C7D1F0FB58E007DA70A /* Help Me Out - Patient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Help Me Out - Patient.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C007C811F0FB58E007DA70A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1C007C831F0FB58E007DA70A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1C007C841F0FB58E007DA70A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1C007C8A1F0FB58E007DA70A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1C007C8C1F0FB58E007DA70A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1C007C8F1F0FB58E007DA70A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1C007C911F0FB58E007DA70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C007C961F0FB58E007DA70A /* Help Me Out - PatientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Help Me Out - PatientTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C007C9A1F0FB58E007DA70A /* Help_Me_Out___PatientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Help_Me_Out___PatientTests.m"; sourceTree = "<group>"; };
+		1C007C9C1F0FB58E007DA70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C007CA11F0FB58E007DA70A /* Help Me Out - PatientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Help Me Out - PatientUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C007CA51F0FB58E007DA70A /* Help_Me_Out___PatientUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Help_Me_Out___PatientUITests.m"; sourceTree = "<group>"; };
+		1C007CA71F0FB58E007DA70A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C007CB51F0FB890007DA70A /* homePatient.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = homePatient.storyboard; sourceTree = "<group>"; };
+		1C007CB71F0FBD4D007DA70A /* Global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Global.h; path = "Global Method/Global.h"; sourceTree = "<group>"; };
+		1C007CB81F0FBD4D007DA70A /* Global.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Global.m; path = "Global Method/Global.m"; sourceTree = "<group>"; };
+		1C007CBA1F0FBDB7007DA70A /* AppConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppConst.h; sourceTree = "<group>"; };
+		1C007CBC1F0FBFB2007DA70A /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		1C36FFBA1F15FB8E00B7D0C8 /* ActivityHistoryVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityHistoryVc.h; path = "Activity History/ActivityHistoryVc.h"; sourceTree = "<group>"; };
+		1C36FFBB1F15FB8E00B7D0C8 /* ActivityHistoryVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityHistoryVc.m; path = "Activity History/ActivityHistoryVc.m"; sourceTree = "<group>"; };
+		1C36FFBF1F16103600B7D0C8 /* ActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ActivityCell.h; path = "Activity History/ActivityCell.h"; sourceTree = "<group>"; };
+		1C36FFC01F16103600B7D0C8 /* ActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ActivityCell.m; path = "Activity History/ActivityCell.m"; sourceTree = "<group>"; };
+		1C36FFC11F16103600B7D0C8 /* ActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ActivityCell.xib; path = "Activity History/ActivityCell.xib"; sourceTree = "<group>"; };
+		1CF5FEF11F14ACA1002BBDB5 /* Help Me Out - Patient.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = "Help Me Out - Patient.entitlements"; path = "Help Me Out - Patient/Help Me Out - Patient.entitlements"; sourceTree = "<group>"; };
+		1CF5FEF91F14BD69002BBDB5 /* homeCareGiver.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = homeCareGiver.storyboard; sourceTree = "<group>"; };
+		1CF5FEFF1F14BE4F002BBDB5 /* userModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = userModel.h; sourceTree = "<group>"; };
+		1CF5FF001F14BE4F002BBDB5 /* userModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = userModel.m; sourceTree = "<group>"; };
+		1CF5FF0B1F14CA2B002BBDB5 /* mainLandingVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainLandingVc.h; sourceTree = "<group>"; };
+		1CF5FF0C1F14CA2B002BBDB5 /* mainLandingVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainLandingVc.m; sourceTree = "<group>"; };
+		1CF5FF111F14CA3B002BBDB5 /* CareHomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CareHomeCell.h; sourceTree = "<group>"; };
+		1CF5FF121F14CA3B002BBDB5 /* CareHomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CareHomeCell.m; sourceTree = "<group>"; };
+		1CF5FF131F14CA3B002BBDB5 /* CareHomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CareHomeCell.xib; sourceTree = "<group>"; };
+		1CF5FF141F14CA3B002BBDB5 /* HomeVcCareGiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVcCareGiver.h; sourceTree = "<group>"; };
+		1CF5FF151F14CA3B002BBDB5 /* HomeVcCareGiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVcCareGiver.m; sourceTree = "<group>"; };
+		1CF5FF171F14CA3B002BBDB5 /* LoginVCCareGiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVCCareGiver.h; sourceTree = "<group>"; };
+		1CF5FF181F14CA3B002BBDB5 /* LoginVCCareGiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVCCareGiver.m; sourceTree = "<group>"; };
+		1CF5FF1F1F14CA47002BBDB5 /* AddCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddCell.h; sourceTree = "<group>"; };
+		1CF5FF201F14CA47002BBDB5 /* AddCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddCell.m; sourceTree = "<group>"; };
+		1CF5FF211F14CA47002BBDB5 /* AddCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddCell.xib; sourceTree = "<group>"; };
+		1CF5FF231F14CA47002BBDB5 /* addpersonVc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = addpersonVc.h; sourceTree = "<group>"; };
+		1CF5FF241F14CA47002BBDB5 /* addpersonVc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = addpersonVc.m; sourceTree = "<group>"; };
+		1CF5FF261F14CA47002BBDB5 /* LoginVCPatient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginVCPatient.h; sourceTree = "<group>"; };
+		1CF5FF271F14CA47002BBDB5 /* LoginVCPatient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginVCPatient.m; sourceTree = "<group>"; };
+		1CF5FF291F14CA47002BBDB5 /* HomeVcPatient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeVcPatient.h; sourceTree = "<group>"; };
+		1CF5FF2A1F14CA47002BBDB5 /* HomeVcPatient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeVcPatient.m; sourceTree = "<group>"; };
+		1CF5FF2C1F14CA47002BBDB5 /* HomeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeCell.h; sourceTree = "<group>"; };
+		1CF5FF2D1F14CA47002BBDB5 /* HomeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeCell.m; sourceTree = "<group>"; };
+		1CF5FF2E1F14CA47002BBDB5 /* HomeCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeCell.xib; sourceTree = "<group>"; };
+		2296E2C4C601EB6FDCB77215 /* Pods-Help Me Out - PatientUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Help Me Out - PatientUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Help Me Out - PatientUITests/Pods-Help Me Out - PatientUITests.release.xcconfig"; sourceTree = "<group>"; };
+		2B630D7FF6F90F0722D45914 /* libPods-Help Me Out - PatientUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Help Me Out - PatientUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3870CD1F46D83D0A5DF2DDE2 /* Pods-Help Me Out - PatientTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Help Me Out - PatientTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Help Me Out - PatientTests/Pods-Help Me Out - PatientTests.release.xcconfig"; sourceTree = "<group>"; };
+		73BB0565D24D5BE9AF1F633D /* libPods-Help Me Out - PatientTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Help Me Out - PatientTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F7F09E4B9022E5BBB598083 /* Pods-Help Me Out - Patient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Help Me Out - Patient.release.xcconfig"; path = "Pods/Target Support Files/Pods-Help Me Out - Patient/Pods-Help Me Out - Patient.release.xcconfig"; sourceTree = "<group>"; };
+		89C2C08AAD8D57B39F81C590 /* Pods-Help Me Out - Patient.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Help Me Out - Patient.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Help Me Out - Patient/Pods-Help Me Out - Patient.debug.xcconfig"; sourceTree = "<group>"; };
+		A28824091DEE8798AFB5892C /* Pods-Help Me Out - PatientUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Help Me Out - PatientUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Help Me Out - PatientUITests/Pods-Help Me Out - PatientUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D2A247821F162C04007EF2F2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E53B87C375B170B1B0FEBFD0 /* libPods-Help Me Out - Patient.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Help Me Out - Patient.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1C007C7A1F0FB58E007DA70A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AE18BCF08F26DB60B5545659 /* libPods-Help Me Out - Patient.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C007C931F0FB58E007DA70A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EA015B080C7625E3CDF65FB /* libPods-Help Me Out - PatientTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C007C9E1F0FB58E007DA70A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				223B02871A6B3F81F3664310 /* libPods-Help Me Out - PatientUITests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C007C741F0FB58E007DA70A = {
+			isa = PBXGroup;
+			children = (
+				1CF5FEF11F14ACA1002BBDB5 /* Help Me Out - Patient.entitlements */,
+				1C007C7F1F0FB58E007DA70A /* Help Me Out - Patient */,
+				1C007C991F0FB58E007DA70A /* Help Me Out - PatientTests */,
+				1C007CA41F0FB58E007DA70A /* Help Me Out - PatientUITests */,
+				1C007C7E1F0FB58E007DA70A /* Products */,
+				71D092DC6EDE2182E0BE5549 /* Pods */,
+				68661D7900465C7B5ED6F00B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1C007C7E1F0FB58E007DA70A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1C007C7D1F0FB58E007DA70A /* Help Me Out - Patient.app */,
+				1C007C961F0FB58E007DA70A /* Help Me Out - PatientTests.xctest */,
+				1C007CA11F0FB58E007DA70A /* Help Me Out - PatientUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1C007C7F1F0FB58E007DA70A /* Help Me Out - Patient */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5FF0A1F14CA2B002BBDB5 /* Main Login Vc */,
+				1CF5FEFE1F14BE4F002BBDB5 /* UserModel */,
+				1CF5FF1D1F14CA47002BBDB5 /* Patient Details */,
+				1CF5FF0E1F14CA3B002BBDB5 /* CareGiverDetails */,
+				1C007C831F0FB58E007DA70A /* AppDelegate.h */,
+				1C007C841F0FB58E007DA70A /* AppDelegate.m */,
+				1C007C891F0FB58E007DA70A /* Main.storyboard */,
+				1C007CB51F0FB890007DA70A /* homePatient.storyboard */,
+				1CF5FEF91F14BD69002BBDB5 /* homeCareGiver.storyboard */,
+				1C007C8C1F0FB58E007DA70A /* Assets.xcassets */,
+				1C007C8E1F0FB58E007DA70A /* LaunchScreen.storyboard */,
+				1C007C911F0FB58E007DA70A /* Info.plist */,
+				D2A247821F162C04007EF2F2 /* GoogleService-Info.plist */,
+				1C007C801F0FB58E007DA70A /* Supporting Files */,
+				1C007CBA1F0FBDB7007DA70A /* AppConst.h */,
+				1C007CBC1F0FBFB2007DA70A /* PrefixHeader.pch */,
+				1C007CB71F0FBD4D007DA70A /* Global.h */,
+				1C007CB81F0FBD4D007DA70A /* Global.m */,
+			);
+			path = "Help Me Out - Patient";
+			sourceTree = "<group>";
+		};
+		1C007C801F0FB58E007DA70A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1C007C811F0FB58E007DA70A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1C007C991F0FB58E007DA70A /* Help Me Out - PatientTests */ = {
+			isa = PBXGroup;
+			children = (
+				1C007C9A1F0FB58E007DA70A /* Help_Me_Out___PatientTests.m */,
+				1C007C9C1F0FB58E007DA70A /* Info.plist */,
+			);
+			path = "Help Me Out - PatientTests";
+			sourceTree = "<group>";
+		};
+		1C007CA41F0FB58E007DA70A /* Help Me Out - PatientUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1C007CA51F0FB58E007DA70A /* Help_Me_Out___PatientUITests.m */,
+				1C007CA71F0FB58E007DA70A /* Info.plist */,
+			);
+			path = "Help Me Out - PatientUITests";
+			sourceTree = "<group>";
+		};
+		1C36FFB91F15FB6200B7D0C8 /* Activity History */ = {
+			isa = PBXGroup;
+			children = (
+				1C36FFBA1F15FB8E00B7D0C8 /* ActivityHistoryVc.h */,
+				1C36FFBB1F15FB8E00B7D0C8 /* ActivityHistoryVc.m */,
+				1C36FFBF1F16103600B7D0C8 /* ActivityCell.h */,
+				1C36FFC01F16103600B7D0C8 /* ActivityCell.m */,
+				1C36FFC11F16103600B7D0C8 /* ActivityCell.xib */,
+			);
+			name = "Activity History";
+			sourceTree = "<group>";
+		};
+		1CF5FEFE1F14BE4F002BBDB5 /* UserModel */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5FEFF1F14BE4F002BBDB5 /* userModel.h */,
+				1CF5FF001F14BE4F002BBDB5 /* userModel.m */,
+			);
+			name = UserModel;
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		1CF5FF0A1F14CA2B002BBDB5 /* Main Login Vc */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5FF0B1F14CA2B002BBDB5 /* mainLandingVc.h */,
+				1CF5FF0C1F14CA2B002BBDB5 /* mainLandingVc.m */,
+			);
+			path = "Main Login Vc";
+			sourceTree = "<group>";
+		};
+		1CF5FF0E1F14CA3B002BBDB5 /* CareGiverDetails */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5FF0F1F14CA3B002BBDB5 /* HomeCareGiver */,
+				1CF5FF161F14CA3B002BBDB5 /* LoginCareGiver */,
+			);
+			path = CareGiverDetails;
+			sourceTree = "<group>";
+		};
+		1CF5FF0F1F14CA3B002BBDB5 /* HomeCareGiver */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5FF101F14CA3B002BBDB5 /* CareHomeCell */,
+				1CF5FF141F14CA3B002BBDB5 /* HomeVcCareGiver.h */,
+				1CF5FF151F14CA3B002BBDB5 /* HomeVcCareGiver.m */,
+			);
+			path = HomeCareGiver;
+			sourceTree = "<group>";
+		};
+		1CF5FF101F14CA3B002BBDB5 /* CareHomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5FF111F14CA3B002BBDB5 /* CareHomeCell.h */,
+				1CF5FF121F14CA3B002BBDB5 /* CareHomeCell.m */,
+				1CF5FF131F14CA3B002BBDB5 /* CareHomeCell.xib */,
+			);
+			path = CareHomeCell;
+			sourceTree = "<group>";
+		};
+		1CF5FF161F14CA3B002BBDB5 /* LoginCareGiver */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5FF171F14CA3B002BBDB5 /* LoginVCCareGiver.h */,
+				1CF5FF181F14CA3B002BBDB5 /* LoginVCCareGiver.m */,
+			);
+			path = LoginCareGiver;
+			sourceTree = "<group>";
+		};
+		1CF5FF1D1F14CA47002BBDB5 /* Patient Details */ = {
+			isa = PBXGroup;
+			children = (
+				1C36FFB91F15FB6200B7D0C8 /* Activity History */,
+				1CF5FF1E1F14CA47002BBDB5 /* Add cell */,
+				1CF5FF221F14CA47002BBDB5 /* add person vc */,
+				1CF5FF251F14CA47002BBDB5 /* PatientLogin */,
+				1CF5FF281F14CA47002BBDB5 /* PatioentHome */,
+			);
+			path = "Patient Details";
+			sourceTree = "<group>";
+		};
+		1CF5FF1E1F14CA47002BBDB5 /* Add cell */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5FF1F1F14CA47002BBDB5 /* AddCell.h */,
+				1CF5FF201F14CA47002BBDB5 /* AddCell.m */,
+				1CF5FF211F14CA47002BBDB5 /* AddCell.xib */,
+			);
+			path = "Add cell";
+			sourceTree = "<group>";
+		};
+		1CF5FF221F14CA47002BBDB5 /* add person vc */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5FF231F14CA47002BBDB5 /* addpersonVc.h */,
+				1CF5FF241F14CA47002BBDB5 /* addpersonVc.m */,
+			);
+			path = "add person vc";
+			sourceTree = "<group>";
+		};
+		1CF5FF251F14CA47002BBDB5 /* PatientLogin */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5FF261F14CA47002BBDB5 /* LoginVCPatient.h */,
+				1CF5FF271F14CA47002BBDB5 /* LoginVCPatient.m */,
+			);
+			path = PatientLogin;
+			sourceTree = "<group>";
+		};
+		1CF5FF281F14CA47002BBDB5 /* PatioentHome */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5FF291F14CA47002BBDB5 /* HomeVcPatient.h */,
+				1CF5FF2A1F14CA47002BBDB5 /* HomeVcPatient.m */,
+				1CF5FF2B1F14CA47002BBDB5 /* PatientHomeCell */,
+			);
+			path = PatioentHome;
+			sourceTree = "<group>";
+		};
+		1CF5FF2B1F14CA47002BBDB5 /* PatientHomeCell */ = {
+			isa = PBXGroup;
+			children = (
+				1CF5FF2C1F14CA47002BBDB5 /* HomeCell.h */,
+				1CF5FF2D1F14CA47002BBDB5 /* HomeCell.m */,
+				1CF5FF2E1F14CA47002BBDB5 /* HomeCell.xib */,
+			);
+			path = PatientHomeCell;
+			sourceTree = "<group>";
+		};
+		68661D7900465C7B5ED6F00B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E53B87C375B170B1B0FEBFD0 /* libPods-Help Me Out - Patient.a */,
+				73BB0565D24D5BE9AF1F633D /* libPods-Help Me Out - PatientTests.a */,
+				2B630D7FF6F90F0722D45914 /* libPods-Help Me Out - PatientUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		71D092DC6EDE2182E0BE5549 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				89C2C08AAD8D57B39F81C590 /* Pods-Help Me Out - Patient.debug.xcconfig */,
+				7F7F09E4B9022E5BBB598083 /* Pods-Help Me Out - Patient.release.xcconfig */,
+				0B1753882E8038E18F479277 /* Pods-Help Me Out - PatientTests.debug.xcconfig */,
+				3870CD1F46D83D0A5DF2DDE2 /* Pods-Help Me Out - PatientTests.release.xcconfig */,
+				A28824091DEE8798AFB5892C /* Pods-Help Me Out - PatientUITests.debug.xcconfig */,
+				2296E2C4C601EB6FDCB77215 /* Pods-Help Me Out - PatientUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1C007C7C1F0FB58E007DA70A /* Help Me Out - Patient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C007CAA1F0FB58E007DA70A /* Build configuration list for PBXNativeTarget "Help Me Out - Patient" */;
+			buildPhases = (
+				7953DF758955578378B34F0A /* [CP] Check Pods Manifest.lock */,
+				1C007C791F0FB58E007DA70A /* Sources */,
+				1C007C7A1F0FB58E007DA70A /* Frameworks */,
+				1C007C7B1F0FB58E007DA70A /* Resources */,
+				497FB1247938D2EF222A8CB1 /* [CP] Embed Pods Frameworks */,
+				6AFA6D27800C2211D28189DB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Help Me Out - Patient";
+			productName = "Help Me Out - Patient";
+			productReference = 1C007C7D1F0FB58E007DA70A /* Help Me Out - Patient.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1C007C951F0FB58E007DA70A /* Help Me Out - PatientTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C007CAD1F0FB58E007DA70A /* Build configuration list for PBXNativeTarget "Help Me Out - PatientTests" */;
+			buildPhases = (
+				4E6925250CED60137A88AD54 /* [CP] Check Pods Manifest.lock */,
+				1C007C921F0FB58E007DA70A /* Sources */,
+				1C007C931F0FB58E007DA70A /* Frameworks */,
+				1C007C941F0FB58E007DA70A /* Resources */,
+				A09B0963E34119D46C13B4AB /* [CP] Embed Pods Frameworks */,
+				A5220913B5A48A53D2BFFB27 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C007C981F0FB58E007DA70A /* PBXTargetDependency */,
+			);
+			name = "Help Me Out - PatientTests";
+			productName = "Help Me Out - PatientTests";
+			productReference = 1C007C961F0FB58E007DA70A /* Help Me Out - PatientTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1C007CA01F0FB58E007DA70A /* Help Me Out - PatientUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1C007CB01F0FB58E007DA70A /* Build configuration list for PBXNativeTarget "Help Me Out - PatientUITests" */;
+			buildPhases = (
+				40D99D97F06A287E248FB059 /* [CP] Check Pods Manifest.lock */,
+				1C007C9D1F0FB58E007DA70A /* Sources */,
+				1C007C9E1F0FB58E007DA70A /* Frameworks */,
+				1C007C9F1F0FB58E007DA70A /* Resources */,
+				7B99F08AAF244D9B1A167C7C /* [CP] Embed Pods Frameworks */,
+				DD2A0761D43D59436FB09F3A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1C007CA31F0FB58E007DA70A /* PBXTargetDependency */,
+			);
+			name = "Help Me Out - PatientUITests";
+			productName = "Help Me Out - PatientUITests";
+			productReference = 1C007CA11F0FB58E007DA70A /* Help Me Out - PatientUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1C007C751F0FB58E007DA70A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Bhadresh Patoliya";
+				TargetAttributes = {
+					1C007C7C1F0FB58E007DA70A = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4H524KBU9T;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					1C007C951F0FB58E007DA70A = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1C007C7C1F0FB58E007DA70A;
+					};
+					1C007CA01F0FB58E007DA70A = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1C007C7C1F0FB58E007DA70A;
+					};
+				};
+			};
+			buildConfigurationList = 1C007C781F0FB58E007DA70A /* Build configuration list for PBXProject "Help Me Out - Patient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1C007C741F0FB58E007DA70A;
+			productRefGroup = 1C007C7E1F0FB58E007DA70A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1C007C7C1F0FB58E007DA70A /* Help Me Out - Patient */,
+				1C007C951F0FB58E007DA70A /* Help Me Out - PatientTests */,
+				1C007CA01F0FB58E007DA70A /* Help Me Out - PatientUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1C007C7B1F0FB58E007DA70A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C007CB61F0FB890007DA70A /* homePatient.storyboard in Resources */,
+				1CF5FF351F14CA47002BBDB5 /* HomeCell.xib in Resources */,
+				1C007C901F0FB58E007DA70A /* LaunchScreen.storyboard in Resources */,
+				1C007C8D1F0FB58E007DA70A /* Assets.xcassets in Resources */,
+				1CF5FF1A1F14CA3B002BBDB5 /* CareHomeCell.xib in Resources */,
+				1C36FFC31F16103600B7D0C8 /* ActivityCell.xib in Resources */,
+				1CF5FF301F14CA47002BBDB5 /* AddCell.xib in Resources */,
+				D2A247831F162C04007EF2F2 /* GoogleService-Info.plist in Resources */,
+				1C007C8B1F0FB58E007DA70A /* Main.storyboard in Resources */,
+				1CF5FEFA1F14BD69002BBDB5 /* homeCareGiver.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C007C941F0FB58E007DA70A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C007C9F1F0FB58E007DA70A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40D99D97F06A287E248FB059 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		497FB1247938D2EF222A8CB1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Help Me Out - Patient/Pods-Help Me Out - Patient-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4E6925250CED60137A88AD54 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6AFA6D27800C2211D28189DB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Help Me Out - Patient/Pods-Help Me Out - Patient-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7953DF758955578378B34F0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7B99F08AAF244D9B1A167C7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Help Me Out - PatientUITests/Pods-Help Me Out - PatientUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A09B0963E34119D46C13B4AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Help Me Out - PatientTests/Pods-Help Me Out - PatientTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A5220913B5A48A53D2BFFB27 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Help Me Out - PatientTests/Pods-Help Me Out - PatientTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD2A0761D43D59436FB09F3A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Help Me Out - PatientUITests/Pods-Help Me Out - PatientUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1C007C791F0FB58E007DA70A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1CF5FF2F1F14CA47002BBDB5 /* AddCell.m in Sources */,
+				1CF5FF1B1F14CA3B002BBDB5 /* HomeVcCareGiver.m in Sources */,
+				1C36FFBC1F15FB8E00B7D0C8 /* ActivityHistoryVc.m in Sources */,
+				1CF5FF0D1F14CA2B002BBDB5 /* mainLandingVc.m in Sources */,
+				1C007CB91F0FBD4D007DA70A /* Global.m in Sources */,
+				1C36FFC21F16103600B7D0C8 /* ActivityCell.m in Sources */,
+				1C007C851F0FB58E007DA70A /* AppDelegate.m in Sources */,
+				1CF5FF341F14CA47002BBDB5 /* HomeCell.m in Sources */,
+				1CF5FF331F14CA47002BBDB5 /* HomeVcPatient.m in Sources */,
+				1CF5FF311F14CA47002BBDB5 /* addpersonVc.m in Sources */,
+				1C007C821F0FB58E007DA70A /* main.m in Sources */,
+				1CF5FF011F14BE4F002BBDB5 /* userModel.m in Sources */,
+				1CF5FF321F14CA47002BBDB5 /* LoginVCPatient.m in Sources */,
+				1CF5FF191F14CA3B002BBDB5 /* CareHomeCell.m in Sources */,
+				1CF5FF1C1F14CA3B002BBDB5 /* LoginVCCareGiver.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C007C921F0FB58E007DA70A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C007C9B1F0FB58E007DA70A /* Help_Me_Out___PatientTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1C007C9D1F0FB58E007DA70A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C007CA61F0FB58E007DA70A /* Help_Me_Out___PatientUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1C007C981F0FB58E007DA70A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C007C7C1F0FB58E007DA70A /* Help Me Out - Patient */;
+			targetProxy = 1C007C971F0FB58E007DA70A /* PBXContainerItemProxy */;
+		};
+		1C007CA31F0FB58E007DA70A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1C007C7C1F0FB58E007DA70A /* Help Me Out - Patient */;
+			targetProxy = 1C007CA21F0FB58E007DA70A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1C007C891F0FB58E007DA70A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C007C8A1F0FB58E007DA70A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1C007C8E1F0FB58E007DA70A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1C007C8F1F0FB58E007DA70A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1C007CA81F0FB58E007DA70A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1C007CA91F0FB58E007DA70A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(PROJECT_DIR)/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1C007CAB1F0FB58E007DA70A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89C2C08AAD8D57B39F81C590 /* Pods-Help Me Out - Patient.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Help Me Out - Patient/Help Me Out - Patient.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4H524KBU9T;
+				GCC_PREFIX_HEADER = "Help Me Out - Patient/PrefixHeader.pch";
+				INFOPLIST_FILE = "Help Me Out - Patient/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.helpmeout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7aca8ff1-4634-4fbb-a58a-c6f2f74f5f2a";
+				PROVISIONING_PROFILE_SPECIFIER = helpmeout_Dev;
+			};
+			name = Debug;
+		};
+		1C007CAC1F0FB58E007DA70A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7F7F09E4B9022E5BBB598083 /* Pods-Help Me Out - Patient.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Help Me Out - Patient/Help Me Out - Patient.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 4H524KBU9T;
+				GCC_PREFIX_HEADER = "Help Me Out - Patient/PrefixHeader.pch";
+				INFOPLIST_FILE = "Help Me Out - Patient/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.app.helpmeout;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "7aca8ff1-4634-4fbb-a58a-c6f2f74f5f2a";
+				PROVISIONING_PROFILE_SPECIFIER = helpmeout_Dev;
+			};
+			name = Release;
+		};
+		1C007CAE1F0FB58E007DA70A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0B1753882E8038E18F479277 /* Pods-Help Me Out - PatientTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Help Me Out - PatientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.patient.Help-Me-Out---PatientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Help Me Out - Patient.app/Help Me Out - Patient";
+			};
+			name = Debug;
+		};
+		1C007CAF1F0FB58E007DA70A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3870CD1F46D83D0A5DF2DDE2 /* Pods-Help Me Out - PatientTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Help Me Out - PatientTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.patient.Help-Me-Out---PatientTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Help Me Out - Patient.app/Help Me Out - Patient";
+			};
+			name = Release;
+		};
+		1C007CB11F0FB58E007DA70A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A28824091DEE8798AFB5892C /* Pods-Help Me Out - PatientUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "Help Me Out - PatientUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.patient.Help-Me-Out---PatientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Help Me Out - Patient";
+			};
+			name = Debug;
+		};
+		1C007CB21F0FB58E007DA70A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2296E2C4C601EB6FDCB77215 /* Pods-Help Me Out - PatientUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = "Help Me Out - PatientUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.app.patient.Help-Me-Out---PatientUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Help Me Out - Patient";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1C007C781F0FB58E007DA70A /* Build configuration list for PBXProject "Help Me Out - Patient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C007CA81F0FB58E007DA70A /* Debug */,
+				1C007CA91F0FB58E007DA70A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C007CAA1F0FB58E007DA70A /* Build configuration list for PBXNativeTarget "Help Me Out - Patient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C007CAB1F0FB58E007DA70A /* Debug */,
+				1C007CAC1F0FB58E007DA70A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C007CAD1F0FB58E007DA70A /* Build configuration list for PBXNativeTarget "Help Me Out - PatientTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C007CAE1F0FB58E007DA70A /* Debug */,
+				1C007CAF1F0FB58E007DA70A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1C007CB01F0FB58E007DA70A /* Build configuration list for PBXNativeTarget "Help Me Out - PatientUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C007CB11F0FB58E007DA70A /* Debug */,
+				1C007CB21F0FB58E007DA70A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1C007C751F0FB58E007DA70A /* Project object */;
+}

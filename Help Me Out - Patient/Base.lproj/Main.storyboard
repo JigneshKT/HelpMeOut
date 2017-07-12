@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="21K-aa-H0v">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Help Me Out-->
+        <scene sceneID="zfd-lw-2qx">
+            <objects>
+                <viewController id="FwI-4V-ddT" customClass="mainLandingVc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="c1I-Xl-rJZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="a7A-er-du8"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="CbY-JK-fQt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uD3-nQ-C7f">
+                                <rect key="frame" x="26" y="100" width="268" height="300"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3L4-ug-AYR">
+                                        <rect key="frame" x="10" y="121" width="248" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Oao-3k-JQz"/>
+                                        </constraints>
+                                        <state key="normal" title="I am Partient"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="push" id="t9N-fM-33x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0Y-dp-Udo">
+                                        <rect key="frame" x="10" y="71" width="248" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="OdB-kZ-mia"/>
+                                        </constraints>
+                                        <state key="normal" title="I am Caregiver"/>
+                                        <connections>
+                                            <segue destination="Ulc-tU-ZAs" kind="push" id="65p-pJ-Cg8"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please select" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OnG-FU-H0n">
+                                        <rect key="frame" x="82" y="20" width="105" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="105" id="1cz-oy-gOY"/>
+                                            <constraint firstAttribute="height" constant="21" id="DpY-KC-z38"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="09Q-Dt-IaM"/>
+                                    <constraint firstItem="OnG-FU-H0n" firstAttribute="top" secondItem="uD3-nQ-C7f" secondAttribute="top" constant="20" id="BZu-cx-bbR"/>
+                                    <constraint firstItem="3L4-ug-AYR" firstAttribute="top" secondItem="i0Y-dp-Udo" secondAttribute="bottom" constant="20" id="DLO-5O-1QK"/>
+                                    <constraint firstItem="3L4-ug-AYR" firstAttribute="leading" secondItem="uD3-nQ-C7f" secondAttribute="leading" constant="10" id="L05-Fe-rx6"/>
+                                    <constraint firstItem="OnG-FU-H0n" firstAttribute="centerX" secondItem="uD3-nQ-C7f" secondAttribute="centerX" id="LS6-4f-fAG"/>
+                                    <constraint firstItem="i0Y-dp-Udo" firstAttribute="top" secondItem="OnG-FU-H0n" secondAttribute="bottom" constant="30" id="Nk9-Ne-qG7"/>
+                                    <constraint firstItem="i0Y-dp-Udo" firstAttribute="leading" secondItem="uD3-nQ-C7f" secondAttribute="leading" constant="10" id="bvF-0D-29C"/>
+                                    <constraint firstItem="i0Y-dp-Udo" firstAttribute="centerX" secondItem="uD3-nQ-C7f" secondAttribute="centerX" id="iHS-gu-Jsh"/>
+                                    <constraint firstItem="3L4-ug-AYR" firstAttribute="centerX" secondItem="uD3-nQ-C7f" secondAttribute="centerX" id="jrh-2b-2fx"/>
+                                    <constraint firstAttribute="trailing" secondItem="3L4-ug-AYR" secondAttribute="trailing" constant="10" id="tD8-uL-6bM"/>
+                                    <constraint firstAttribute="trailing" secondItem="i0Y-dp-Udo" secondAttribute="trailing" constant="10" id="wJj-GJ-DNv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="uD3-nQ-C7f" firstAttribute="leading" secondItem="CbY-JK-fQt" secondAttribute="leadingMargin" constant="10" id="0o9-Q0-Fxr"/>
+                            <constraint firstItem="uD3-nQ-C7f" firstAttribute="centerY" secondItem="CbY-JK-fQt" secondAttribute="centerY" constant="10" id="3oM-x5-vra"/>
+                            <constraint firstItem="uD3-nQ-C7f" firstAttribute="centerX" secondItem="CbY-JK-fQt" secondAttribute="centerX" id="E7G-b8-JWx"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="uD3-nQ-C7f" secondAttribute="trailing" constant="10" id="ytY-WZ-Auh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Help Me Out" id="nfR-y8-hIv"/>
+                    <connections>
+                        <outlet property="btnCareGIver" destination="i0Y-dp-Udo" id="jNU-6d-C67"/>
+                        <outlet property="btnPatient" destination="3L4-ug-AYR" id="d2N-QP-bGm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8wd-PQ-4MN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="403.125" y="92.5"/>
+        </scene>
+        <!--Patient Login-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="LoginVCPatient" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter patient name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HnO-U8-iiB">
+                                <rect key="frame" x="60" y="183" width="200" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Patient Login / Sign up. (Use for sign up and Login)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xI1-f8-zXI">
+                                <rect key="frame" x="59" y="72" width="211" height="95"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rLa-Ua-1gv">
+                                <rect key="frame" x="91" y="225" width="138" height="30"/>
+                                <state key="normal" title="Login / Sign up"/>
+                                <connections>
+                                    <action selector="btnActionToSignUpLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LNB-dv-unP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="rLa-Ua-1gv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="54g-af-oAY"/>
+                            <constraint firstAttribute="trailing" secondItem="HnO-U8-iiB" secondAttribute="trailing" constant="60" id="5aH-d6-alj"/>
+                            <constraint firstItem="xI1-f8-zXI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="59" id="H6K-RG-FEA"/>
+                            <constraint firstAttribute="trailing" secondItem="xI1-f8-zXI" secondAttribute="trailing" constant="50" id="Hat-Mb-GSW"/>
+                            <constraint firstItem="HnO-U8-iiB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="60" id="LiD-Ya-Fwd"/>
+                            <constraint firstItem="rLa-Ua-1gv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="91" id="RID-1h-Gbc"/>
+                            <constraint firstItem="HnO-U8-iiB" firstAttribute="top" secondItem="xI1-f8-zXI" secondAttribute="bottom" constant="16" id="Tev-Mg-yzn"/>
+                            <constraint firstItem="rLa-Ua-1gv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="nRe-dp-Qac"/>
+                            <constraint firstAttribute="trailing" secondItem="rLa-Ua-1gv" secondAttribute="trailing" constant="91" id="oPi-yJ-k3R"/>
+                            <constraint firstItem="rLa-Ua-1gv" firstAttribute="top" secondItem="HnO-U8-iiB" secondAttribute="bottom" constant="20" id="x4k-HN-v0X"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Patient Login" id="F9c-VK-b8c"/>
+                    <connections>
+                        <outlet property="txtUsername" destination="HnO-U8-iiB" id="15y-lN-hvA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1344.375" y="507.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aGU-Hn-kei">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="21K-aa-H0v" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="LbP-1t-F9O">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="FwI-4V-ddT" kind="relationship" relationship="rootViewController" id="Ulc-I2-Yxk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Sl-ER-KNp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-594.375" y="92.5"/>
+        </scene>
+        <!--Caregiver Login-->
+        <scene sceneID="Ors-DA-DpN">
+            <objects>
+                <viewController id="Ulc-tU-ZAs" customClass="LoginVCCareGiver" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Tag-Hf-nTl"/>
+                        <viewControllerLayoutGuide type="bottom" id="ghH-h1-Sn3"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q2W-sg-nKh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RNE-1b-D9O">
+                                <rect key="frame" x="108.5" y="225" width="103" height="30"/>
+                                <state key="normal" title="Login / Sign up"/>
+                                <connections>
+                                    <action selector="btnActionToSignUpLogin:" destination="Ulc-tU-ZAs" eventType="touchUpInside" id="bgh-5y-2jP"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="bezel" placeholder="Enter caregiver name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GOv-K7-Zvl">
+                                <rect key="frame" x="50" y="183" width="220" height="22"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Caregiver Login / Sign up. (Use for sign up and Login)" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHS-Fg-yPl">
+                                <rect key="frame" x="59" y="72" width="211" height="95"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="GOv-K7-Zvl" firstAttribute="top" secondItem="WHS-Fg-yPl" secondAttribute="bottom" constant="16" id="0Rk-2R-oJt"/>
+                            <constraint firstAttribute="trailing" secondItem="GOv-K7-Zvl" secondAttribute="trailing" constant="50" id="6Wr-Wb-ENw"/>
+                            <constraint firstItem="RNE-1b-D9O" firstAttribute="centerY" secondItem="Q2W-sg-nKh" secondAttribute="centerY" id="6eA-HN-9Sj"/>
+                            <constraint firstItem="GOv-K7-Zvl" firstAttribute="leading" secondItem="Q2W-sg-nKh" secondAttribute="leading" constant="50" id="Ff8-BN-vDp"/>
+                            <constraint firstAttribute="trailing" secondItem="WHS-Fg-yPl" secondAttribute="trailing" constant="50" id="IGB-UK-bNs"/>
+                            <constraint firstItem="WHS-Fg-yPl" firstAttribute="leading" secondItem="Q2W-sg-nKh" secondAttribute="leading" constant="59" id="Pd8-XG-AZA"/>
+                            <constraint firstItem="RNE-1b-D9O" firstAttribute="top" secondItem="GOv-K7-Zvl" secondAttribute="bottom" constant="20" id="gMl-7h-cMS"/>
+                            <constraint firstItem="RNE-1b-D9O" firstAttribute="centerX" secondItem="Q2W-sg-nKh" secondAttribute="centerX" id="imH-Of-evr"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Caregiver Login" id="gb7-cf-fdb"/>
+                    <connections>
+                        <outlet property="txtUsername" destination="GOv-K7-Zvl" id="0cO-eK-vra"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7HU-dF-Srb" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1346.25" y="-201.25"/>
+        </scene>
+    </scenes>
+</document>
