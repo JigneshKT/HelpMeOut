@@ -109,16 +109,7 @@
         }
         cell.lblName.text =[[arrCareGiverList objectAtIndex:indexPath.row - 1] valueForKey:keyCareGiverName];
         cell.lblStatus.text =[[arrCareGiverList objectAtIndex:indexPath.row -1]valueForKey:KeyStatus];
-        if ([cell.lblStatus.text isEqualToString:keyStatusAccept])
-        {
-            cell.btnHelp.hidden = NO;
-            cell.lblStatus.hidden = YES;
-        }
-        else
-        {
-            cell.btnHelp.hidden = YES;
-            cell.lblStatus.hidden = NO;
-        }
+        
         return cell;
     }
     

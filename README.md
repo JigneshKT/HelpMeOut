@@ -14,7 +14,7 @@ Why single application for patient and caregiver?
 
 Installation procedure:
 
-1. Download the source code from GIT repository
+1. Download the source code from GIT repository (https://github.com/JigneshKT/HelpMeOut.git)
 2. Open terminal -> cd /to/path/source code
 3. Pod install. If cocoapods is not installed, please see https://guides.cocoapods.org/using/getting-started.html for
 4.  It should show following installation:
